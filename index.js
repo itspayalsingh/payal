@@ -13,6 +13,10 @@ app.use("/user",user_router)
 // app.use("/note",note_router)
 app.use("/note",note_router)
 
+app.get("/",(req,res)=>{
+    res.send("this is home page")
+})
+
 app.listen(9090,async()=>{
     try {
         await connection

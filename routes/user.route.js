@@ -5,6 +5,9 @@ const { user_model } = require("../models/user.model");
 const user_router = express.Router();
 user_router.use(express.json());
 
+user_router.get("/",(req,res)=>{
+    res.send("user are available here")
+})
 
 
 user_router.post("/signup", async (req, res) => {
